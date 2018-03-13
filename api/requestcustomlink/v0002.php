@@ -8,7 +8,7 @@ if ($mysqli->connect_errno) {
     die();
 }
 
-$url = $_POST["Url"]);
+$url = $_POST["Url"];
 $stringsToReplace = [
 	"SteamID", "SteamID64", "Hostname", "IpAddress" ,"Port", "UserId", "Client", "Args"
 ];
@@ -26,7 +26,7 @@ SteamWorks_SetHTTPRequestGetOrPostParameter(request, "Url", buffer);
 */
 
 $UserId = $mysqli->real_escape_string($_POST["UserId"]);
-$steamid = $mysqli->real_escape_string($_POST["SteamID"]);
+$steamid = $mysqli->real_escape_string($_POST["SteamId"]);
 $serverkey = $mysqli->real_escape_string($_POST["ServerKey"]);
 $urlEx = $mysqli->real_escape_string($url);
 
