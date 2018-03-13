@@ -8,7 +8,7 @@ if ($mysqli->connect_errno) {
     die();
 }
 
-$url = $_POST["Url"]);
+$url = $_POST["Url"];
 $stringsToReplace = [
 	"SteamID", "SteamID64", "Hostname", "IpAddress" ,"Port", "UserId", "Client", "Args"
 ];
